@@ -1,0 +1,23 @@
+{
+  "name": "maqueta",
+  "version": "1.0.0",
+  "description": "Apuntes de las maquetas eunoia",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pablorello/maqueta-eunoia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pablorello/maqueta-eunoia/issues"
+  },
+  "homepage": "https://github.com/pablorello/maqueta-eunoia#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.5"
+  }
+}

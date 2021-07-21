@@ -2,4 +2,4 @@
 Apuntes de las maquetas eunoia
 
 Librerias
-Tailwind
+Tailwind    
