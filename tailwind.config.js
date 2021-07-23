@@ -6,7 +6,24 @@ module.exports = {
       sans: ['Inter', 'Arial', 'sans-serif'],
       serif: ['Recoleta', 'serif']
     },
+    fontSize: {
+      'xs': '.75rem',
+      'sm': '.875rem',
+      'tiny': '.875rem',
+      'base': '1rem',
+      'h3d': '1.375rem',
+      'xl': '1.25rem',
+      '2xl': '1.5rem',
+      '3xl': '1.875rem',
+      '4xl': '2.25rem',
+      '5xl': '3rem',
+      '6xl': '4rem',
+      '7xl': '5rem'
+     },
     extend: {
+     padding: {
+      '4+': '1.125rem'
+     },
       gridTemplateColumns: {
         // Simple 12 column grid
        '12': 'repeat(12, minmax(0, 1fr))',
