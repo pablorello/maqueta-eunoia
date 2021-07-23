@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['Inter', 'Arial', 'sans-serif'],
-      'recoleta': ['Recoleta']
+      serif: ['Recoleta', 'serif']
     },
     extend: {
       gridTemplateColumns: {
