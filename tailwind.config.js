@@ -19,7 +19,9 @@ module.exports = {
       '4xlp': '2.5rem',
       '5xl': '3rem',
       '6xl': '4rem',
-      '7xl': '5rem'
+      '7xl': '5rem',
+      '8xl': '6.25rem',
+      '9xl': '7rem',
      },
     extend: {
      padding: {
@@ -78,7 +80,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      grayscale: ['hover'], 
+    },
   },
   plugins: [],
 }
