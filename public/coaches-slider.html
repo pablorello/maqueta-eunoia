@@ -11,6 +11,7 @@
     z-index: 50;
     height: 3px;
     width: 100%;
+    background-color: #4B5258;
 }
     .swiper-scrollbar-drag{
       height: 16px;
@@ -18,7 +19,9 @@
       background-color: #FE3799;
       border-radius: 5px;
     }
-
+ .swiper-slide{
+   height: auto;
+ }
      
     </style>
     
@@ -30,19 +33,28 @@
 </body>
 
 
-    <div class="holder mx-auto container sm:my-1">
-      <div class="grid flex grid-cols-4 lg:grid-cols-12 gap-2 lg:gap-10  lg:pt-20 lg:mb-16 md:mx-0">
-<div class="swiper-container mySwiper">
+    <div class="holder mx-auto container sm:my-1 overflow-hidden">
+      <div class="title font-sans">
+          <h2 class="text-gris-900 font-bold text-7xl">
+            coaches EUNOIA
+          </h2>
+          <h3 class="text-gris-600 font-regular text-xl uppercase">
+            entrena con nosotros
+          </h3>
+        </div>
+      <div class="flex lg:pt-10 lg:mb-6 md:mx-0">
+        
+<div class="swiper-container categorias-slider">
   <div class="swiper-wrapper">
 
       <!-- each -->
-      <div class="each swiper-slide mb-10 shadow-lg bg-gris-700 relative col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-3  rounded-lg overflow-hidden filter grayscale hover:grayscale-0" style="background-image:url('https://source.unsplash.com/284x385'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+      <div class="each swiper-slide mb-10 shadow-lg bg-gris-700 relative rounded-lg overflow-hidden filter grayscale hover:grayscale-0" style="background-image:url('https://source.unsplash.com/284x385'); background-position: center; background-repeat: no-repeat; background-size: cover;">
             
         <div class="flex flex-row items-end h-full w-full">
           <div class="flex flex-col w-full pb-6 pt-10 px-3 bg-gradient-to-t from-black text-gray-200">
             <h3 class="font-sans text-base font-bold leading-5 lowercase mb-36 text-4xlp leading-10	">Indoor Cycling</h3>
             <div class="flex justify-center	info-box flex font-light text-gris-100 mb-4 mt-6">
-                    <svg id="Icon_Yoga" data-name="Icon / Yoga" xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 21.333 16" class="w-10 h-10">
+                    <svg id="Icon_Yoga" data-name="Icon / Yoga" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 21.333 16" class="w-10 h-10">
                         <path id="Trazado_284" data-name="Trazado 284" d="M21.221,29.194A9.243,9.243,0,0,0,15.713,27h-.068a7.4,7.4,0,0,0-3.215.822,9.519,9.519,0,0,0,1.4-4.729c0-3.729-2.8-6.856-2.92-6.987a.344.344,0,0,0-.493,0c-.119.131-2.92,3.258-2.92,6.987A9.519,9.519,0,0,0,8.9,27.82,7.4,7.4,0,0,0,5.688,27H5.621a9.245,9.245,0,0,0-5.509,2.2.333.333,0,0,0-.006.493A9.189,9.189,0,0,0,5.63,32H5.7a8.385,8.385,0,0,0,4.969-1.868A8.38,8.38,0,0,0,15.635,32H15.7a9.189,9.189,0,0,0,5.524-2.313.333.333,0,0,0-.006-.493ZM5.637,31.333A8.4,8.4,0,0,1,.859,29.449a8.46,8.46,0,0,1,4.762-1.783h.059a7.807,7.807,0,0,1,4.644,1.883,7.857,7.857,0,0,1-4.688,1.785Zm5.029-2.17a10.194,10.194,0,0,1-2.5-6.071,10.944,10.944,0,0,1,2.5-6.243,10.923,10.923,0,0,1,2.5,6.243A10.194,10.194,0,0,1,10.667,29.163Zm5.029,2.17a7.858,7.858,0,0,1-4.688-1.785,7.807,7.807,0,0,1,4.644-1.883h.059a8.462,8.462,0,0,1,4.763,1.784A8.378,8.378,0,0,1,15.7,31.333Z" transform="translate(0 -16)" fill="#868e96"/>
                         <path id="Trazado_285" data-name="Trazado 285" d="M11.812,59.892c.237-.068.481-.126.733-.172a9.285,9.285,0,0,1-1.781-2.986,7.816,7.816,0,0,1,4.4.541q-.04-.368-.047-.747a8.693,8.693,0,0,0-4.863-.371.33.33,0,0,0-.241.411A9.9,9.9,0,0,0,11.812,59.892Z" transform="translate(-8.351 -49.283)" fill="#868e96"/>
                         <path id="Trazado_286" data-name="Trazado 286" d="M91.1,56.733a9.273,9.273,0,0,1-1.791,3c.251.047.5.106.733.174a9.9,9.9,0,0,0,1.81-3.338.33.33,0,0,0-.241-.411,8.692,8.692,0,0,0-4.863.371q-.006.38-.047.747A7.816,7.816,0,0,1,91.1,56.733Z" transform="translate(-72.177 -49.283)" fill="#868e96"/>
@@ -59,13 +71,13 @@
       </div>
       <!-- each -->
        <!-- each -->
-       <div class="each swiper-slide mb-10 shadow-lg bg-gris-700 relative col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-3  rounded-lg overflow-hidden filter grayscale hover:grayscale-0" style="background-image:url('https://source.unsplash.com/284x385'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+       <div class="each swiper-slide mb-10 shadow-lg bg-gris-700 relative  rounded-lg overflow-hidden filter grayscale hover:grayscale-0" style="background-image:url('https://source.unsplash.com/284x385'); background-position: center; background-repeat: no-repeat; background-size: cover;">
             
         <div class="flex flex-row items-end h-full w-full">
           <div class="flex flex-col w-full pb-6 pt-10 px-3 bg-gradient-to-t from-black text-gray-200">
             <h3 class="font-sans text-base font-bold leading-5 lowercase mb-36 text-4xlp leading-10	">Indoor Cycling</h3>
             <div class="flex justify-center	info-box flex font-light text-gris-100 mb-4 mt-6">
-                    <svg id="Icon_Yoga" data-name="Icon / Yoga" xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 21.333 16" class="w-10 h-10">
+                    <svg id="Icon_Yoga" data-name="Icon / Yoga" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 21.333 16" class="w-10 h-10">
                         <path id="Trazado_284" data-name="Trazado 284" d="M21.221,29.194A9.243,9.243,0,0,0,15.713,27h-.068a7.4,7.4,0,0,0-3.215.822,9.519,9.519,0,0,0,1.4-4.729c0-3.729-2.8-6.856-2.92-6.987a.344.344,0,0,0-.493,0c-.119.131-2.92,3.258-2.92,6.987A9.519,9.519,0,0,0,8.9,27.82,7.4,7.4,0,0,0,5.688,27H5.621a9.245,9.245,0,0,0-5.509,2.2.333.333,0,0,0-.006.493A9.189,9.189,0,0,0,5.63,32H5.7a8.385,8.385,0,0,0,4.969-1.868A8.38,8.38,0,0,0,15.635,32H15.7a9.189,9.189,0,0,0,5.524-2.313.333.333,0,0,0-.006-.493ZM5.637,31.333A8.4,8.4,0,0,1,.859,29.449a8.46,8.46,0,0,1,4.762-1.783h.059a7.807,7.807,0,0,1,4.644,1.883,7.857,7.857,0,0,1-4.688,1.785Zm5.029-2.17a10.194,10.194,0,0,1-2.5-6.071,10.944,10.944,0,0,1,2.5-6.243,10.923,10.923,0,0,1,2.5,6.243A10.194,10.194,0,0,1,10.667,29.163Zm5.029,2.17a7.858,7.858,0,0,1-4.688-1.785,7.807,7.807,0,0,1,4.644-1.883h.059a8.462,8.462,0,0,1,4.763,1.784A8.378,8.378,0,0,1,15.7,31.333Z" transform="translate(0 -16)" fill="#868e96"/>
                         <path id="Trazado_285" data-name="Trazado 285" d="M11.812,59.892c.237-.068.481-.126.733-.172a9.285,9.285,0,0,1-1.781-2.986,7.816,7.816,0,0,1,4.4.541q-.04-.368-.047-.747a8.693,8.693,0,0,0-4.863-.371.33.33,0,0,0-.241.411A9.9,9.9,0,0,0,11.812,59.892Z" transform="translate(-8.351 -49.283)" fill="#868e96"/>
                         <path id="Trazado_286" data-name="Trazado 286" d="M91.1,56.733a9.273,9.273,0,0,1-1.791,3c.251.047.5.106.733.174a9.9,9.9,0,0,0,1.81-3.338.33.33,0,0,0-.241-.411,8.692,8.692,0,0,0-4.863.371q-.006.38-.047.747A7.816,7.816,0,0,1,91.1,56.733Z" transform="translate(-72.177 -49.283)" fill="#868e96"/>
@@ -80,14 +92,14 @@
           </div>
         </div>
       </div>
-      <!-- each --> <!-- each -->
-      <div class="each swiper-slide mb-10 shadow-lg bg-gris-700 relative col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-3  rounded-lg overflow-hidden filter grayscale hover:grayscale-0" style="background-image:url('https://source.unsplash.com/284x385'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+      <!-- each -->  <!-- each -->
+       <div class="each swiper-slide mb-10 shadow-lg bg-gris-700 relative  rounded-lg overflow-hidden filter grayscale hover:grayscale-0" style="background-image:url('https://source.unsplash.com/284x385'); background-position: center; background-repeat: no-repeat; background-size: cover;">
             
         <div class="flex flex-row items-end h-full w-full">
           <div class="flex flex-col w-full pb-6 pt-10 px-3 bg-gradient-to-t from-black text-gray-200">
             <h3 class="font-sans text-base font-bold leading-5 lowercase mb-36 text-4xlp leading-10	">Indoor Cycling</h3>
             <div class="flex justify-center	info-box flex font-light text-gris-100 mb-4 mt-6">
-                    <svg id="Icon_Yoga" data-name="Icon / Yoga" xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 21.333 16" class="w-10 h-10">
+                    <svg id="Icon_Yoga" data-name="Icon / Yoga" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 21.333 16" class="w-10 h-10">
                         <path id="Trazado_284" data-name="Trazado 284" d="M21.221,29.194A9.243,9.243,0,0,0,15.713,27h-.068a7.4,7.4,0,0,0-3.215.822,9.519,9.519,0,0,0,1.4-4.729c0-3.729-2.8-6.856-2.92-6.987a.344.344,0,0,0-.493,0c-.119.131-2.92,3.258-2.92,6.987A9.519,9.519,0,0,0,8.9,27.82,7.4,7.4,0,0,0,5.688,27H5.621a9.245,9.245,0,0,0-5.509,2.2.333.333,0,0,0-.006.493A9.189,9.189,0,0,0,5.63,32H5.7a8.385,8.385,0,0,0,4.969-1.868A8.38,8.38,0,0,0,15.635,32H15.7a9.189,9.189,0,0,0,5.524-2.313.333.333,0,0,0-.006-.493ZM5.637,31.333A8.4,8.4,0,0,1,.859,29.449a8.46,8.46,0,0,1,4.762-1.783h.059a7.807,7.807,0,0,1,4.644,1.883,7.857,7.857,0,0,1-4.688,1.785Zm5.029-2.17a10.194,10.194,0,0,1-2.5-6.071,10.944,10.944,0,0,1,2.5-6.243,10.923,10.923,0,0,1,2.5,6.243A10.194,10.194,0,0,1,10.667,29.163Zm5.029,2.17a7.858,7.858,0,0,1-4.688-1.785,7.807,7.807,0,0,1,4.644-1.883h.059a8.462,8.462,0,0,1,4.763,1.784A8.378,8.378,0,0,1,15.7,31.333Z" transform="translate(0 -16)" fill="#868e96"/>
                         <path id="Trazado_285" data-name="Trazado 285" d="M11.812,59.892c.237-.068.481-.126.733-.172a9.285,9.285,0,0,1-1.781-2.986,7.816,7.816,0,0,1,4.4.541q-.04-.368-.047-.747a8.693,8.693,0,0,0-4.863-.371.33.33,0,0,0-.241.411A9.9,9.9,0,0,0,11.812,59.892Z" transform="translate(-8.351 -49.283)" fill="#868e96"/>
                         <path id="Trazado_286" data-name="Trazado 286" d="M91.1,56.733a9.273,9.273,0,0,1-1.791,3c.251.047.5.106.733.174a9.9,9.9,0,0,0,1.81-3.338.33.33,0,0,0-.241-.411,8.692,8.692,0,0,0-4.863.371q-.006.38-.047.747A7.816,7.816,0,0,1,91.1,56.733Z" transform="translate(-72.177 -49.283)" fill="#868e96"/>
@@ -102,14 +114,15 @@
           </div>
         </div>
       </div>
-      <!-- each --> <!-- each -->
-      <div class="each swiper-slide mb-10 shadow-lg bg-gris-700 relative col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-3  rounded-lg overflow-hidden filter grayscale hover:grayscale-0" style="background-image:url('https://source.unsplash.com/284x385'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+      <!-- each -->
+       <!-- each -->
+       <div class="each swiper-slide mb-10 shadow-lg bg-gris-700 relative  rounded-lg overflow-hidden filter grayscale hover:grayscale-0" style="background-image:url('https://source.unsplash.com/284x385'); background-position: center; background-repeat: no-repeat; background-size: cover;">
             
         <div class="flex flex-row items-end h-full w-full">
           <div class="flex flex-col w-full pb-6 pt-10 px-3 bg-gradient-to-t from-black text-gray-200">
             <h3 class="font-sans text-base font-bold leading-5 lowercase mb-36 text-4xlp leading-10	">Indoor Cycling</h3>
             <div class="flex justify-center	info-box flex font-light text-gris-100 mb-4 mt-6">
-                    <svg id="Icon_Yoga" data-name="Icon / Yoga" xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 21.333 16" class="w-10 h-10">
+                    <svg id="Icon_Yoga" data-name="Icon / Yoga" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 21.333 16" class="w-10 h-10">
                         <path id="Trazado_284" data-name="Trazado 284" d="M21.221,29.194A9.243,9.243,0,0,0,15.713,27h-.068a7.4,7.4,0,0,0-3.215.822,9.519,9.519,0,0,0,1.4-4.729c0-3.729-2.8-6.856-2.92-6.987a.344.344,0,0,0-.493,0c-.119.131-2.92,3.258-2.92,6.987A9.519,9.519,0,0,0,8.9,27.82,7.4,7.4,0,0,0,5.688,27H5.621a9.245,9.245,0,0,0-5.509,2.2.333.333,0,0,0-.006.493A9.189,9.189,0,0,0,5.63,32H5.7a8.385,8.385,0,0,0,4.969-1.868A8.38,8.38,0,0,0,15.635,32H15.7a9.189,9.189,0,0,0,5.524-2.313.333.333,0,0,0-.006-.493ZM5.637,31.333A8.4,8.4,0,0,1,.859,29.449a8.46,8.46,0,0,1,4.762-1.783h.059a7.807,7.807,0,0,1,4.644,1.883,7.857,7.857,0,0,1-4.688,1.785Zm5.029-2.17a10.194,10.194,0,0,1-2.5-6.071,10.944,10.944,0,0,1,2.5-6.243,10.923,10.923,0,0,1,2.5,6.243A10.194,10.194,0,0,1,10.667,29.163Zm5.029,2.17a7.858,7.858,0,0,1-4.688-1.785,7.807,7.807,0,0,1,4.644-1.883h.059a8.462,8.462,0,0,1,4.763,1.784A8.378,8.378,0,0,1,15.7,31.333Z" transform="translate(0 -16)" fill="#868e96"/>
                         <path id="Trazado_285" data-name="Trazado 285" d="M11.812,59.892c.237-.068.481-.126.733-.172a9.285,9.285,0,0,1-1.781-2.986,7.816,7.816,0,0,1,4.4.541q-.04-.368-.047-.747a8.693,8.693,0,0,0-4.863-.371.33.33,0,0,0-.241.411A9.9,9.9,0,0,0,11.812,59.892Z" transform="translate(-8.351 -49.283)" fill="#868e96"/>
                         <path id="Trazado_286" data-name="Trazado 286" d="M91.1,56.733a9.273,9.273,0,0,1-1.791,3c.251.047.5.106.733.174a9.9,9.9,0,0,0,1.81-3.338.33.33,0,0,0-.241-.411,8.692,8.692,0,0,0-4.863.371q-.006.38-.047.747A7.816,7.816,0,0,1,91.1,56.733Z" transform="translate(-72.177 -49.283)" fill="#868e96"/>
@@ -124,14 +137,84 @@
           </div>
         </div>
       </div>
-      <!-- each --> <!-- each -->
-      <div class="each swiper-slide mb-10 shadow-lg bg-gris-700 relative col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-3  rounded-lg overflow-hidden filter grayscale hover:grayscale-0" style="background-image:url('https://source.unsplash.com/284x385'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+      <!-- each -->
+       <!-- each -->
+       <div class="each swiper-slide mb-10 shadow-lg bg-gris-700 relative  rounded-lg overflow-hidden filter grayscale hover:grayscale-0" style="background-image:url('https://source.unsplash.com/284x385'); background-position: center; background-repeat: no-repeat; background-size: cover;">
             
         <div class="flex flex-row items-end h-full w-full">
           <div class="flex flex-col w-full pb-6 pt-10 px-3 bg-gradient-to-t from-black text-gray-200">
             <h3 class="font-sans text-base font-bold leading-5 lowercase mb-36 text-4xlp leading-10	">Indoor Cycling</h3>
             <div class="flex justify-center	info-box flex font-light text-gris-100 mb-4 mt-6">
-                    <svg id="Icon_Yoga" data-name="Icon / Yoga" xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 21.333 16" class="w-10 h-10">
+                    <svg id="Icon_Yoga" data-name="Icon / Yoga" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 21.333 16" class="w-10 h-10">
+                        <path id="Trazado_284" data-name="Trazado 284" d="M21.221,29.194A9.243,9.243,0,0,0,15.713,27h-.068a7.4,7.4,0,0,0-3.215.822,9.519,9.519,0,0,0,1.4-4.729c0-3.729-2.8-6.856-2.92-6.987a.344.344,0,0,0-.493,0c-.119.131-2.92,3.258-2.92,6.987A9.519,9.519,0,0,0,8.9,27.82,7.4,7.4,0,0,0,5.688,27H5.621a9.245,9.245,0,0,0-5.509,2.2.333.333,0,0,0-.006.493A9.189,9.189,0,0,0,5.63,32H5.7a8.385,8.385,0,0,0,4.969-1.868A8.38,8.38,0,0,0,15.635,32H15.7a9.189,9.189,0,0,0,5.524-2.313.333.333,0,0,0-.006-.493ZM5.637,31.333A8.4,8.4,0,0,1,.859,29.449a8.46,8.46,0,0,1,4.762-1.783h.059a7.807,7.807,0,0,1,4.644,1.883,7.857,7.857,0,0,1-4.688,1.785Zm5.029-2.17a10.194,10.194,0,0,1-2.5-6.071,10.944,10.944,0,0,1,2.5-6.243,10.923,10.923,0,0,1,2.5,6.243A10.194,10.194,0,0,1,10.667,29.163Zm5.029,2.17a7.858,7.858,0,0,1-4.688-1.785,7.807,7.807,0,0,1,4.644-1.883h.059a8.462,8.462,0,0,1,4.763,1.784A8.378,8.378,0,0,1,15.7,31.333Z" transform="translate(0 -16)" fill="#868e96"/>
+                        <path id="Trazado_285" data-name="Trazado 285" d="M11.812,59.892c.237-.068.481-.126.733-.172a9.285,9.285,0,0,1-1.781-2.986,7.816,7.816,0,0,1,4.4.541q-.04-.368-.047-.747a8.693,8.693,0,0,0-4.863-.371.33.33,0,0,0-.241.411A9.9,9.9,0,0,0,11.812,59.892Z" transform="translate(-8.351 -49.283)" fill="#868e96"/>
+                        <path id="Trazado_286" data-name="Trazado 286" d="M91.1,56.733a9.273,9.273,0,0,1-1.791,3c.251.047.5.106.733.174a9.9,9.9,0,0,0,1.81-3.338.33.33,0,0,0-.241-.411,8.692,8.692,0,0,0-4.863.371q-.006.38-.047.747A7.816,7.816,0,0,1,91.1,56.733Z" transform="translate(-72.177 -49.283)" fill="#868e96"/>
+                        <path id="Trazado_287" data-name="Trazado 287" d="M57.319,52a1.319,1.319,0,1,0,1.319,1.319A1.319,1.319,0,0,0,57.319,52Zm0,1.979a.66.66,0,1,1,.66-.66A.66.66,0,0,1,57.319,53.979Z" transform="translate(-46.653 -45.988)" fill="#868e96"/>
+                      </svg>  
+            </div>
+            <div class="flex justify-center	info-box flex font-light text-gris-300">
+                <span class="mr-2 px-1 font-light "><span class="block text-center text-2xl font-black text-white">12</span><span class="text-sm text-center font-light">clases</span></span>
+                <span class="mr-2 px-1 font-light "><span class="block text-center text-2xl font-black text-white">3</span><span class="text-sm text-center font-light">categorias</span></span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <!-- each -->
+       <!-- each -->
+       <div class="each swiper-slide mb-10 shadow-lg bg-gris-700 relative  rounded-lg overflow-hidden filter grayscale hover:grayscale-0" style="background-image:url('https://source.unsplash.com/284x385'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+            
+        <div class="flex flex-row items-end h-full w-full">
+          <div class="flex flex-col w-full pb-6 pt-10 px-3 bg-gradient-to-t from-black text-gray-200">
+            <h3 class="font-sans text-base font-bold leading-5 lowercase mb-36 text-4xlp leading-10	">Indoor Cycling</h3>
+            <div class="flex justify-center	info-box flex font-light text-gris-100 mb-4 mt-6">
+                    <svg id="Icon_Yoga" data-name="Icon / Yoga" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 21.333 16" class="w-10 h-10">
+                        <path id="Trazado_284" data-name="Trazado 284" d="M21.221,29.194A9.243,9.243,0,0,0,15.713,27h-.068a7.4,7.4,0,0,0-3.215.822,9.519,9.519,0,0,0,1.4-4.729c0-3.729-2.8-6.856-2.92-6.987a.344.344,0,0,0-.493,0c-.119.131-2.92,3.258-2.92,6.987A9.519,9.519,0,0,0,8.9,27.82,7.4,7.4,0,0,0,5.688,27H5.621a9.245,9.245,0,0,0-5.509,2.2.333.333,0,0,0-.006.493A9.189,9.189,0,0,0,5.63,32H5.7a8.385,8.385,0,0,0,4.969-1.868A8.38,8.38,0,0,0,15.635,32H15.7a9.189,9.189,0,0,0,5.524-2.313.333.333,0,0,0-.006-.493ZM5.637,31.333A8.4,8.4,0,0,1,.859,29.449a8.46,8.46,0,0,1,4.762-1.783h.059a7.807,7.807,0,0,1,4.644,1.883,7.857,7.857,0,0,1-4.688,1.785Zm5.029-2.17a10.194,10.194,0,0,1-2.5-6.071,10.944,10.944,0,0,1,2.5-6.243,10.923,10.923,0,0,1,2.5,6.243A10.194,10.194,0,0,1,10.667,29.163Zm5.029,2.17a7.858,7.858,0,0,1-4.688-1.785,7.807,7.807,0,0,1,4.644-1.883h.059a8.462,8.462,0,0,1,4.763,1.784A8.378,8.378,0,0,1,15.7,31.333Z" transform="translate(0 -16)" fill="#868e96"/>
+                        <path id="Trazado_285" data-name="Trazado 285" d="M11.812,59.892c.237-.068.481-.126.733-.172a9.285,9.285,0,0,1-1.781-2.986,7.816,7.816,0,0,1,4.4.541q-.04-.368-.047-.747a8.693,8.693,0,0,0-4.863-.371.33.33,0,0,0-.241.411A9.9,9.9,0,0,0,11.812,59.892Z" transform="translate(-8.351 -49.283)" fill="#868e96"/>
+                        <path id="Trazado_286" data-name="Trazado 286" d="M91.1,56.733a9.273,9.273,0,0,1-1.791,3c.251.047.5.106.733.174a9.9,9.9,0,0,0,1.81-3.338.33.33,0,0,0-.241-.411,8.692,8.692,0,0,0-4.863.371q-.006.38-.047.747A7.816,7.816,0,0,1,91.1,56.733Z" transform="translate(-72.177 -49.283)" fill="#868e96"/>
+                        <path id="Trazado_287" data-name="Trazado 287" d="M57.319,52a1.319,1.319,0,1,0,1.319,1.319A1.319,1.319,0,0,0,57.319,52Zm0,1.979a.66.66,0,1,1,.66-.66A.66.66,0,0,1,57.319,53.979Z" transform="translate(-46.653 -45.988)" fill="#868e96"/>
+                      </svg>  
+            </div>
+            <div class="flex justify-center	info-box flex font-light text-gris-300">
+                <span class="mr-2 px-1 font-light "><span class="block text-center text-2xl font-black text-white">12</span><span class="text-sm text-center font-light">clases</span></span>
+                <span class="mr-2 px-1 font-light "><span class="block text-center text-2xl font-black text-white">3</span><span class="text-sm text-center font-light">categorias</span></span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <!-- each -->
+       <!-- each -->
+       <div class="each swiper-slide mb-10 shadow-lg bg-gris-700 relative  rounded-lg overflow-hidden filter grayscale hover:grayscale-0" style="background-image:url('https://source.unsplash.com/284x385'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+            
+        <div class="flex flex-row items-end h-full w-full">
+          <div class="flex flex-col w-full pb-6 pt-10 px-3 bg-gradient-to-t from-black text-gray-200">
+            <h3 class="font-sans text-base font-bold leading-5 lowercase mb-36 text-4xlp leading-10	">Indoor Cycling</h3>
+            <div class="flex justify-center	info-box flex font-light text-gris-100 mb-4 mt-6">
+                    <svg id="Icon_Yoga" data-name="Icon / Yoga" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 21.333 16" class="w-10 h-10">
+                        <path id="Trazado_284" data-name="Trazado 284" d="M21.221,29.194A9.243,9.243,0,0,0,15.713,27h-.068a7.4,7.4,0,0,0-3.215.822,9.519,9.519,0,0,0,1.4-4.729c0-3.729-2.8-6.856-2.92-6.987a.344.344,0,0,0-.493,0c-.119.131-2.92,3.258-2.92,6.987A9.519,9.519,0,0,0,8.9,27.82,7.4,7.4,0,0,0,5.688,27H5.621a9.245,9.245,0,0,0-5.509,2.2.333.333,0,0,0-.006.493A9.189,9.189,0,0,0,5.63,32H5.7a8.385,8.385,0,0,0,4.969-1.868A8.38,8.38,0,0,0,15.635,32H15.7a9.189,9.189,0,0,0,5.524-2.313.333.333,0,0,0-.006-.493ZM5.637,31.333A8.4,8.4,0,0,1,.859,29.449a8.46,8.46,0,0,1,4.762-1.783h.059a7.807,7.807,0,0,1,4.644,1.883,7.857,7.857,0,0,1-4.688,1.785Zm5.029-2.17a10.194,10.194,0,0,1-2.5-6.071,10.944,10.944,0,0,1,2.5-6.243,10.923,10.923,0,0,1,2.5,6.243A10.194,10.194,0,0,1,10.667,29.163Zm5.029,2.17a7.858,7.858,0,0,1-4.688-1.785,7.807,7.807,0,0,1,4.644-1.883h.059a8.462,8.462,0,0,1,4.763,1.784A8.378,8.378,0,0,1,15.7,31.333Z" transform="translate(0 -16)" fill="#868e96"/>
+                        <path id="Trazado_285" data-name="Trazado 285" d="M11.812,59.892c.237-.068.481-.126.733-.172a9.285,9.285,0,0,1-1.781-2.986,7.816,7.816,0,0,1,4.4.541q-.04-.368-.047-.747a8.693,8.693,0,0,0-4.863-.371.33.33,0,0,0-.241.411A9.9,9.9,0,0,0,11.812,59.892Z" transform="translate(-8.351 -49.283)" fill="#868e96"/>
+                        <path id="Trazado_286" data-name="Trazado 286" d="M91.1,56.733a9.273,9.273,0,0,1-1.791,3c.251.047.5.106.733.174a9.9,9.9,0,0,0,1.81-3.338.33.33,0,0,0-.241-.411,8.692,8.692,0,0,0-4.863.371q-.006.38-.047.747A7.816,7.816,0,0,1,91.1,56.733Z" transform="translate(-72.177 -49.283)" fill="#868e96"/>
+                        <path id="Trazado_287" data-name="Trazado 287" d="M57.319,52a1.319,1.319,0,1,0,1.319,1.319A1.319,1.319,0,0,0,57.319,52Zm0,1.979a.66.66,0,1,1,.66-.66A.66.66,0,0,1,57.319,53.979Z" transform="translate(-46.653 -45.988)" fill="#868e96"/>
+                      </svg>  
+            </div>
+            <div class="flex justify-center	info-box flex font-light text-gris-300">
+                <span class="mr-2 px-1 font-light "><span class="block text-center text-2xl font-black text-white">12</span><span class="text-sm text-center font-light">clases</span></span>
+                <span class="mr-2 px-1 font-light "><span class="block text-center text-2xl font-black text-white">3</span><span class="text-sm text-center font-light">categorias</span></span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <!-- each -->
+       <!-- each -->
+       <div class="each swiper-slide mb-10 shadow-lg bg-gris-700 relative  rounded-lg overflow-hidden filter grayscale hover:grayscale-0" style="background-image:url('https://source.unsplash.com/284x385'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+            
+        <div class="flex flex-row items-end h-full w-full">
+          <div class="flex flex-col w-full pb-6 pt-10 px-3 bg-gradient-to-t from-black text-gray-200">
+            <h3 class="font-sans text-base font-bold leading-5 lowercase mb-36 text-4xlp leading-10	">Indoor Cycling</h3>
+            <div class="flex justify-center	info-box flex font-light text-gris-100 mb-4 mt-6">
+                    <svg id="Icon_Yoga" data-name="Icon / Yoga" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 21.333 16" class="w-10 h-10">
                         <path id="Trazado_284" data-name="Trazado 284" d="M21.221,29.194A9.243,9.243,0,0,0,15.713,27h-.068a7.4,7.4,0,0,0-3.215.822,9.519,9.519,0,0,0,1.4-4.729c0-3.729-2.8-6.856-2.92-6.987a.344.344,0,0,0-.493,0c-.119.131-2.92,3.258-2.92,6.987A9.519,9.519,0,0,0,8.9,27.82,7.4,7.4,0,0,0,5.688,27H5.621a9.245,9.245,0,0,0-5.509,2.2.333.333,0,0,0-.006.493A9.189,9.189,0,0,0,5.63,32H5.7a8.385,8.385,0,0,0,4.969-1.868A8.38,8.38,0,0,0,15.635,32H15.7a9.189,9.189,0,0,0,5.524-2.313.333.333,0,0,0-.006-.493ZM5.637,31.333A8.4,8.4,0,0,1,.859,29.449a8.46,8.46,0,0,1,4.762-1.783h.059a7.807,7.807,0,0,1,4.644,1.883,7.857,7.857,0,0,1-4.688,1.785Zm5.029-2.17a10.194,10.194,0,0,1-2.5-6.071,10.944,10.944,0,0,1,2.5-6.243,10.923,10.923,0,0,1,2.5,6.243A10.194,10.194,0,0,1,10.667,29.163Zm5.029,2.17a7.858,7.858,0,0,1-4.688-1.785,7.807,7.807,0,0,1,4.644-1.883h.059a8.462,8.462,0,0,1,4.763,1.784A8.378,8.378,0,0,1,15.7,31.333Z" transform="translate(0 -16)" fill="#868e96"/>
                         <path id="Trazado_285" data-name="Trazado 285" d="M11.812,59.892c.237-.068.481-.126.733-.172a9.285,9.285,0,0,1-1.781-2.986,7.816,7.816,0,0,1,4.4.541q-.04-.368-.047-.747a8.693,8.693,0,0,0-4.863-.371.33.33,0,0,0-.241.411A9.9,9.9,0,0,0,11.812,59.892Z" transform="translate(-8.351 -49.283)" fill="#868e96"/>
                         <path id="Trazado_286" data-name="Trazado 286" d="M91.1,56.733a9.273,9.273,0,0,1-1.791,3c.251.047.5.106.733.174a9.9,9.9,0,0,0,1.81-3.338.33.33,0,0,0-.241-.411,8.692,8.692,0,0,0-4.863.371q-.006.38-.047.747A7.816,7.816,0,0,1,91.1,56.733Z" transform="translate(-72.177 -49.283)" fill="#868e96"/>
@@ -149,23 +232,86 @@
       <!-- each -->
   </div>
   
-</div></div><div class="swiper-scrollbar"></div></div>
+</div></div><div class="swiper-scrollbar"></div>
+<div class="flex justify-end my-5 py-5">
+  <button class="mt-4 md:mt-0 w-full md:w-auto px-16 py-4+ rounded-full bg-gris-950 font-sans text-white text-xl md:ml-2 xl:ml-4">ir a coaches</button>
+
+</div>
+
+</div>
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Initialize Swiper -->
+
   <script>
-    var swiper = new Swiper(".mySwiper", {
-   // resizeObserver: false,
-      slidesPerView: 3,
-        spaceBetween: 20,
-      scrollbar: {
-        el: ".swiper-scrollbar",
-        hide: false,
-        draggable: true,
-        snapOnRelease: true,
-        dragSize: 200
-      },
-    });
+   
+   
+    /* Swiper
+**************************************************************/
+var swiper= Swiper;
+var init = false;
+function swiperMode() { 
+   console.log('inicia');
+        if (init) {
+          console.log('destruye');
+        // swiper.destroy();
+        }
+       
+          console.log('iniciando...');
+            init = true;
+            
+            swiper = new Swiper('.categorias-slider', {
+              slidesPerView: 1,
+              spaceBetween: 10,
+              loop: false,
+              scrollbar: {
+                        el: ".swiper-scrollbar",
+                        hide: false,
+                        draggable: true,
+                        snapOnRelease: true,
+                      },
+              breakpoints: {
+
+                    320: {
+                        slidesPerView: 2,
+                        spaceBetween: 10,
+                    },
+                    768: {
+                         slidesPerView: 3,
+                         spaceBetween: 20,
+                    },
+                    1024: {
+                      slidesPerView: 4,
+                      spaceBetween: 20,
+                      
+                    },
+                    1424: {
+                      slidesPerView: 5,
+                      spaceBetween: 20,
+                      
+                    }
+
+                }
+
+            });
+        
+}
+
+/* On Load
+**************************************************************/
+window.addEventListener('load', function() {
+    console.log('load');
+    swiperMode();
+    
+});
+
+/* On Resize
+**************************************************************/
+window.addEventListener('resize', function() {
+   console.log('resize');   
+   swiperMode();
+  
+});
+    
   </script>
 </body>
