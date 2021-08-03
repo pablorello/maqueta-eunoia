@@ -1,3 +1,19 @@
+<style>
+    .transparent-bg::before{
+        position: absolute;
+        width: 100%;
+        height: 4rem;
+        content: '';
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background: rgb(132,138,148);
+        background: linear-gradient(135deg, rgba(132,138,148,1) 0%, rgba(55,62,68,1) 50%, rgba(18,20,30,1) 100%);
+        opacity: 0.75;
+    }
+</style>
+
 <head>
     <link href="tailwind.css" rel="stylesheet">
     <title>Main nav</title>
@@ -56,10 +72,27 @@
     </button>
 </nav>
 
-<nav class="hidden lg:block w-full h-16 bg-red-700 py-2.5">
-    <div class="container h-full bg-red-400 mx-auto">
+<nav class="hidden lg:block w-full h-16 py-2.5 sticky top-0 z-50 transparent-bg">
+    <div class="container relative flex justify-between items-stretch h-full mx-auto text-gris-50 lowercase font-sans">
+        <!--Logo y menú-->
+        <div class="flex justify-start gap-14">
+            <!--Logo Eunoia-->
+            <a href="#" class="self-center w-32 h-6 bg-no-repeat" style="background-image: url(../src/img/eunoia-logo-reversed.svg);"></a>
 
+            <!--Menú-->
+            <ul class="self-center flex justify-between gap-6">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Clases</a></li>
+                <li><a href="#">Coaches</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Planes</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+
+        <!--Inicia sesión-->
+        <a href="#" class="self-center rounded-full border border-gris-50 px-5 py-1">Inicia sesión</a>
     </div>
 </nav>
 
-<div class="w-full h-screen bg-cover" style="background-image: url(../src/img/test-image.jpg);"></div>
+<div class="w-full h-screen bg-cover absolute top-0" style="background-image: url(../src/img/test-image.jpg);"></div>
