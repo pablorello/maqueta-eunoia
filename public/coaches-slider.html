@@ -31,7 +31,7 @@
 
 
     <div class="holder mx-auto container sm:my-1">
-      <div class="grid flex grid-cols-4 lg:grid-cols-12 gap-2 lg:gap-10  lg:pt-20 lg:mb-20 pt-10 mb-10 mx-5 md:mx-0 pb-10">
+      <div class="grid flex grid-cols-4 lg:grid-cols-12 gap-2 lg:gap-10  lg:pt-20 lg:mb-16 md:mx-0">
 <div class="swiper-container mySwiper">
   <div class="swiper-wrapper">
 
@@ -156,8 +156,9 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
+   // resizeObserver: false,
       slidesPerView: 3,
-        spaceBetween: 30,
+        spaceBetween: 20,
       scrollbar: {
         el: ".swiper-scrollbar",
         hide: false,
