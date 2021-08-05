@@ -34,14 +34,33 @@
 
 
     <div class="holder mx-auto container sm:my-1 overflow-hidden">
-      <div class="title font-sans">
-          <h2 class="text-gris-900 font-bold text-7xl">
+      <div class="title font-sans flex grid grid-cols-3 mb-10 lg:mb-0">
+        <div class="col-span-2">
+          <h2 class="text-gris-900 font-bold text-4xl lg:text-7xl">
             coaches EUNOIA
           </h2>
-          <h3 class="text-gris-600 font-regular text-xl uppercase">
+        </div>
+        <div class="col-span-1 flex justify-end lg:hidden">
+        <span class="flex  font-xl font-sans">
+            ver todos
+          </span>
+          
+
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.333 20"  class="w-6 h-6 ml-2 p-1 text-gris-900 fill-current">
+            <g id="Icon_Down" data-name="Icon / Down" transform="translate(0 20) rotate(-90)">
+              <path id="Icon_Down-2" data-name="Icon / Down" d="M19.371,4,10,15.978.651,4,0,4.516,10,17.333,20,4.508Z" transform="translate(0 -4)" fill="#000" fill-rule="evenodd"/>
+            </g>
+          </svg>
+        </div>  
+          
+            
+            
+          </span>
+          <h3 class="col-span-3 text-gris-600 hidden lg:block font-regular text-xl uppercase">
             entrena con nosotros
           </h3>
         </div>
+
       <div class="flex lg:pt-10 lg:mb-6 md:mx-0">
         
 <div class="swiper-container categorias-slider">
@@ -232,10 +251,9 @@
       <!-- each -->
   </div>
   
-</div></div><div class="swiper-scrollbar"></div>
-<div class="flex justify-end my-5 py-5">
+</div></div><div class="swiper-scrollbar  hidden lg:block"></div>
+<div class="flex justify-end my-5 py-5 hidden lg:flex">
   <button class="mt-4 md:mt-0 w-full md:w-auto px-16 py-4+ rounded-full bg-gris-950 font-sans text-white text-xl md:ml-2 xl:ml-4">ir a coaches</button>
-
 </div>
 
 </div>

@@ -39,7 +39,7 @@
   
     <div class="holder mx-auto container sm:my-1 overflow-hidden">
      
-      <div class="flex lg:pt-10 lg:mb-6 md:mx-0 grid grids-cols-4 md:grid-cols-12 gap-20">
+      <div class="flex lg:pt-10 lg:mb-6 md:mx-0 grid grids-cols-4 md:grid-cols-12 gap-10">
         <div class="col-span-4 md:cols-span-5">
           <h3 class="text-white font-bold text-3xl md:text-4xl lg:text-5xl xl:text-tsl">
             entrenamiento de <span class="text-categoria-running">
@@ -47,9 +47,9 @@
             </span>
           </h3>
         </div>
-        <div class="col-span-4 md:col-span-7">
+        <div class="col-span-4 md:col-span-8">
           <div class="swiper-container categorias-slider">
-  <div class="swiper-wrapper block md:flex transition-transform box-content grid grids-cols-4">
+  <div class="swiper-wrapper block md:flex transition-transform box-content grid grids-cols-4 sm:gap-4">
      <!-- each -->
   <div class="each col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-3 swiper-slide transform-gpu flex-shrink-0 relative   mb-10 shadow-lg bg-gris-700 relative rounded-lg overflow-hidden">
     <img class="w-full" src="https://source.unsplash.com/297x239" alt="" />
@@ -283,8 +283,8 @@
   </div>
       <!-- each -->
 
-      <div class="each swiper-slide transform-gpu flex-shrink-0">
-        <button class="mt-36 w-auto  px-10 py-3 border border-white rounded-full bg-gris-900 font-sans text-white text-base md:ml-2 xl:ml-4">ver todos</button>
+      <div class="each col-span-4 swiper-slide transform-gpu flex-shrink-0 flex md:block justify-center">
+        <button class="md:mt-36 w-full md:w-auto px-10 py-3 border border-white rounded-full bg-gris-900 font-sans text-white text-base">ver todos</button>
       </div>
  <!-- each -->
   </div>
@@ -293,7 +293,7 @@
         </div>
         
 </div>
-<div class="swiper-scrollbar my-2"></div>
+<div class="swiper-scrollbar my-2 hidden md:block"></div>
 
 </div>
   <!-- Swiper JS -->
