@@ -18,6 +18,7 @@ module.exports = {
       '4xl': '2.25rem',
       '4xlp': '2.5rem',
       '5xl': '3rem',
+      'tsl': '3.75rem',
       '6xl': '4rem',
       '7xl': '5rem',
       '8xl': '6.25rem',
