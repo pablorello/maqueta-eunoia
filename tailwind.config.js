@@ -14,6 +14,7 @@ module.exports = {
       'h3d': '1.375rem',
       'xl': '1.25rem',
       '2xl': '1.5rem',
+      '2.5xl': '1.75rem',
       '3xl': '1.875rem',
       '4xl': '2.25rem',
       '4xlp': '2.5rem',
