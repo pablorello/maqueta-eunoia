@@ -26,6 +26,10 @@ module.exports = {
       '9xl': '7rem',
      },
     extend: {
+     transitionProperty: {
+       'max-height': 'max-height',
+       'margin': 'margin'
+     },
      padding: {
       '4+': '1.125rem'
      },
