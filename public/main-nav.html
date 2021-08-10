@@ -27,6 +27,7 @@
     <link href="tailwind.css" rel="stylesheet">
     <title>Main nav</title>
     <meta name="viewport" content="width=device-width">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -103,4 +104,16 @@
     </nav>
 
     <div class="w-full h-screen bg-cover -mt-16" style="background-image: url(../src/img/test-image.jpg);"></div>
+    <div class="w-full h-screen bg-cover -mt-16" style="background-image: url(../src/img/test-image.jpg);"></div>
+
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 0) {
+                $( "" ).fadeIn();
+            } else {
+                console.log('there');
+                $( "" ).fadeOut();
+            }
+        });
+    </script>
 </body>
