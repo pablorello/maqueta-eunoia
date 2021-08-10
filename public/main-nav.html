@@ -85,7 +85,7 @@
                 </a>
 
                 <!-- Menú mobile -->
-                <button class="w-12 p-3 lg:hidden">
+                <button onclick="openNav()" class="w-12 p-3 lg:hidden">
                     <div class="w-full h-full bg-cover" style="background-image: url(../src/img/menu-icon.svg);"></div>
                 </button>
 
@@ -105,8 +105,43 @@
         </div>
     </nav>
         
-    <nav class="lg:hidden fixed top-0 left-0 w-screen h-screen flex flex-col justify-between bg-gris-950 text-white z-50">
-        <ul class="mx-6 flex flex-col justify-between gap-2 lowercase text-4xl font-bold">
+    <nav id="myNav" class="lg:hidden fixed top-0 left-0 w-screen h-screen flex flex-col justify-between bg-gris-950 text-white z-50">
+        <div class="w-full mt-6 grid grid-cols-3 items-center">
+            <svg class="col-start-2 w-10 justify-self-center" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 37 32" style="enable-background:new 0 0 37 32;" xml:space="preserve">
+                <style type="text/css">
+                    .st0{fill:url(#SVGID_1_);}
+                    .st1{fill:url(#SVGID_2_);}
+                </style>
+                <g>
+                    <g>
+                        
+                            <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="394.3962" y1="1.9785" x2="422.1465" y2="18.0001" gradientTransform="matrix(-1 0 0 -1 431.3962 34)">
+                            <stop  offset="0" style="stop-color:#4A25AA"/>
+                            <stop  offset="1" style="stop-color:#E10098"/>
+                        </linearGradient>
+                        <polygon class="st0" points="37,32 20,32 28.5,17.3 		"/>
+                        
+                            <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="394.3962" y1="1.9784" x2="422.1464" y2="18" gradientTransform="matrix(-1 0 0 -1 431.3962 34)">
+                            <stop  offset="0" style="stop-color:#4A25AA"/>
+                            <stop  offset="1" style="stop-color:#E10098"/>
+                        </linearGradient>
+                        <polygon class="st1" points="18.5,0 26.8,14.3 16.5,32 0,32 		"/>
+                    </g>
+                </g>
+            </svg>
+
+            <button onclick="closeNav()" class="w-11 mr-3 p-3 col-start-3 justify-self-end">
+                <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="18.923" height="18.923" viewBox="0 0 18.923 18.923">
+                    <g id="Grupo_2941" data-name="Grupo 2941" transform="translate(523 -6912)">
+                      <rect id="Rectángulo_1844" data-name="Rectángulo 1844" width="24" height="2.762" transform="translate(-523 6928.97) rotate(-45)" fill="#fff"/>
+                      <rect id="Rectángulo_1845" data-name="Rectángulo 1845" width="24" height="2.762" transform="translate(-521.047 6912) rotate(45)" fill="#fff"/>
+                    </g>
+                  </svg>                  
+            </button>
+        </div>
+
+        <ul class="mx-6 flex flex-col justify-between gap-2 lowercase text-3xl font-bold">
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Clases</a></li>
             <li><a href="#">Coaches</a></li>
@@ -115,9 +150,76 @@
             <li><a href="#">Contacto</a></li>
         </ul>
 
+        <div class="w-full flex justify-center gap-4">
+            <a href="#">
+                <svg id="IG" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                    <g id="Elipse_102" data-name="Elipse 102" fill="none" stroke="#fff" stroke-width="1">
+                    <circle cx="16" cy="16" r="16" stroke="none"/>
+                    <circle cx="16" cy="16" r="15.5" fill="none"/>
+                    </g>
+                    <g id="Instagram" transform="translate(8.482 8.482)">
+                    <path id="Trazado_3" data-name="Trazado 3" d="M7.518,1.336a23.051,23.051,0,0,1,3.007.084,3.874,3.874,0,0,1,1.42.251,2.933,2.933,0,0,1,1.42,1.42,3.874,3.874,0,0,1,.251,1.42c0,.752.084,1,.084,3.007a23.051,23.051,0,0,1-.084,3.007,3.874,3.874,0,0,1-.251,1.42,2.933,2.933,0,0,1-1.42,1.42,3.874,3.874,0,0,1-1.42.251c-.752,0-1,.084-3.007.084a23.051,23.051,0,0,1-3.007-.084,3.874,3.874,0,0,1-1.42-.251,2.933,2.933,0,0,1-1.42-1.42,3.874,3.874,0,0,1-.251-1.42c0-.752-.084-1-.084-3.007A23.051,23.051,0,0,1,1.42,4.511a3.874,3.874,0,0,1,.251-1.42,3,3,0,0,1,.585-.835,1.412,1.412,0,0,1,.835-.585,3.874,3.874,0,0,1,1.42-.251,23.051,23.051,0,0,1,3.007-.084M7.518,0A24.68,24.68,0,0,0,4.427.084,5.157,5.157,0,0,0,2.589.418a3.27,3.27,0,0,0-1.336.835A3.27,3.27,0,0,0,.418,2.589,3.806,3.806,0,0,0,.084,4.427,24.68,24.68,0,0,0,0,7.518a24.68,24.68,0,0,0,.084,3.091,5.157,5.157,0,0,0,.334,1.838,3.27,3.27,0,0,0,.835,1.336,3.27,3.27,0,0,0,1.336.835,5.157,5.157,0,0,0,1.838.334,24.68,24.68,0,0,0,3.091.084,24.681,24.681,0,0,0,3.091-.084,5.157,5.157,0,0,0,1.838-.334,3.5,3.5,0,0,0,2.172-2.172,5.157,5.157,0,0,0,.334-1.838c0-.835.084-1.086.084-3.091a24.68,24.68,0,0,0-.084-3.091,5.157,5.157,0,0,0-.334-1.838,3.27,3.27,0,0,0-.835-1.336A3.27,3.27,0,0,0,12.446.418,5.157,5.157,0,0,0,10.608.084,24.68,24.68,0,0,0,7.518,0m0,3.675A3.78,3.78,0,0,0,3.675,7.518,3.842,3.842,0,1,0,7.518,3.675m0,6.348A2.461,2.461,0,0,1,5.012,7.518,2.461,2.461,0,0,1,7.518,5.012a2.461,2.461,0,0,1,2.506,2.506,2.461,2.461,0,0,1-2.506,2.506m4.009-7.434a.919.919,0,1,0,.919.919.927.927,0,0,0-.919-.919" fill="#fff" fill-rule="evenodd"/>
+                    </g>
+                </svg>              
+            </a>
+
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+                    <defs>
+                        <clipPath id="clip-path">
+                        <rect width="15" height="15" fill="none"/>
+                        </clipPath>
+                    </defs>
+                    <g id="TW" transform="translate(-0.317)">
+                        <g id="Elipse_103" data-name="Elipse 103" transform="translate(0.317)" fill="none" stroke="#fff" stroke-width="1">
+                        <circle cx="16" cy="16" r="16" stroke="none"/>
+                        <circle cx="16" cy="16" r="15.5" fill="none"/>
+                        </g>
+                        <g id="Twitter" transform="translate(9.317 9)" clip-path="url(#clip-path)">
+                        <rect id="Rectángulo_548" data-name="Rectángulo 548" width="15" height="15" fill="none"/>
+                        <path id="Trazado_2" data-name="Trazado 2" d="M42.761,14.2a8.693,8.693,0,0,0,8.771-8.771V5.007a6.79,6.79,0,0,0,1.5-1.587,6.934,6.934,0,0,1-1.754.5,3.25,3.25,0,0,0,1.336-1.671A7.661,7.661,0,0,1,50.7,3a2.983,2.983,0,0,0-2.255-1,3.138,3.138,0,0,0-3.091,3.091,1.628,1.628,0,0,0,.084.668A8.636,8.636,0,0,1,39.086,2.5a3.2,3.2,0,0,0-.418,1.587A3.319,3.319,0,0,0,40,6.678a2.816,2.816,0,0,1-1.42-.418h0a3.053,3.053,0,0,0,2.506,3.007,2.575,2.575,0,0,1-.835.084,1.421,1.421,0,0,1-.585-.084,3.164,3.164,0,0,0,2.924,2.172,6.307,6.307,0,0,1-3.842,1.336A2.313,2.313,0,0,1,38,12.692a7.884,7.884,0,0,0,4.761,1.5" transform="translate(-38 -1.06)" fill="#fff" fill-rule="evenodd"/>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+            
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+                    <defs>
+                    <clipPath id="clip-path">
+                        <rect width="15" height="15" fill="none"/>
+                    </clipPath>
+                    </defs>
+                    <g id="Fb" transform="translate(0.367)">
+                    <g id="Elipse_101" data-name="Elipse 101" transform="translate(-0.367)" fill="none" stroke="#fff" stroke-width="1">
+                        <circle cx="16" cy="16" r="16" stroke="none"/>
+                        <circle cx="16" cy="16" r="15.5" fill="none"/>
+                    </g>
+                    <g id="Facebook" transform="translate(7.633 8)" clip-path="url(#clip-path)">
+                        <rect id="Rectángulo_547" data-name="Rectángulo 547" width="15" height="15" fill="none"/>
+                        <path id="Trazado_1" data-name="Trazado 1" d="M85.1,15.035V8.186h2.339l.334-2.673H85.1V3.842c0-.752.251-1.336,1.336-1.336h1.42V.084C87.518.084,86.682,0,85.763,0a3.224,3.224,0,0,0-3.425,3.508v2H80V8.186h2.339v6.849Z" transform="translate(-76.241)" fill="#fff" fill-rule="evenodd"/>
+                    </g>
+                    </g>
+                </svg>
+            </a>
+
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                    <g id="Fb" transform="translate(0.05)">
+                    <g id="Elipse_101" data-name="Elipse 101" transform="translate(-0.05)" fill="none" stroke="#fff" stroke-width="1">
+                        <circle cx="16" cy="16" r="16" stroke="none"/>
+                        <circle cx="16" cy="16" r="15.5" fill="none"/>
+                    </g>
+                    <path id="Trazado_278" data-name="Trazado 278" d="M223.638,3736.186s0-3.7.615-5.046a2.6,2.6,0,0,1,2.292-1.33l4.644-.147h6.218l2.688.147a2.829,2.829,0,0,1,2.589,2.662,23.771,23.771,0,0,1,.244,4.045v2.792s.012,4.165-2.714,4.323-6.835.213-6.835.213l-6.066-.167s-2.679-.047-3.267-1.684S223.638,3736.186,223.638,3736.186Z" transform="translate(-217.326 -3720.753)" fill="#fff"/>
+                    <path id="Unión_47" data-name="Unión 47" d="M0,.723V5.773a.684.684,0,0,0,1.027.657L5.135,3.87a.718.718,0,0,0,0-1.244L1.027.065A.73.73,0,0,0,0,.723Z" transform="translate(13.203 12.734)" fill="#0e131a"/>
+                    </g>
+                </svg>
+            </a>              
+        </div>
+
         <div class="bg-gris-900 px-6 py-5 grid grid-cols-2 gap-4">
-            <form class="m-0 bg-gris-800 col-span-1">
-                <input class="w-full placeholder-gris-300 bg-gris-800 font-serif" type="text" placeholder="Buscar" name="search">
+            <form class="m-0 bg-gris-800 col-span-1 rounded-full">
+                <input class="w-full h-full placeholder-gris-300 bg-transparent font-serif" type="text" placeholder="Buscar" name="search">
             </form>
 
             <a href="#" class="w-full rounded-full px-5 py-2 bg-rosa-500 font-semibold text-sm text-center lowercase">Inicia sesión</a>
@@ -136,5 +238,15 @@
                 $( ".transparent-bg" ).fadeOut();
             }
         });
+    </script>
+
+    <script>
+        function openNav() {
+        document.getElementById("myNav").style.display = "flex";
+        }
+        
+        function closeNav() {
+        document.getElementById("myNav").style.display = "none";
+        }
     </script>
 </body>
