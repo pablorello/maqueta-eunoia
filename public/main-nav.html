@@ -105,9 +105,19 @@
         </div>
     </nav>
         
-    <nav id="myNav" class="lg:hidden fixed top-0 left-0 w-screen h-screen flex flex-col justify-between bg-gris-950 text-white z-50">
-        <div class="w-full mt-6 grid grid-cols-3 items-center">
-            <svg class="col-start-2 w-10 justify-self-center" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    <nav id="myNav" class="lg:hidden w-0 fixed transition-width overflow-x-hidden top-0 left-0 w-screen h-screen flex flex-col justify-between bg-gris-950 text-white z-50">
+
+        <button onclick="closeNav()" class="absolute w-11 right-3.5 top-2.5 p-3 col-start-3">
+            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="18.923" height="18.923" viewBox="0 0 18.923 18.923">
+                <g id="Grupo_2941" data-name="Grupo 2941" transform="translate(523 -6912)">
+                  <rect id="Rectángulo_1844" data-name="Rectángulo 1844" width="24" height="2.762" transform="translate(-523 6928.97) rotate(-45)" fill="#fff"/>
+                  <rect id="Rectángulo_1845" data-name="Rectángulo 1845" width="24" height="2.762" transform="translate(-521.047 6912) rotate(45)" fill="#fff"/>
+                </g>
+              </svg>                  
+        </button>
+
+        <div class="w-full mt-6">
+            <svg class="col-start-2 w-10 mx-auto justify-self-center" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 37 32" style="enable-background:new 0 0 37 32;" xml:space="preserve">
                 <style type="text/css">
                     .st0{fill:url(#SVGID_1_);}
@@ -130,15 +140,6 @@
                     </g>
                 </g>
             </svg>
-
-            <button onclick="closeNav()" class="w-11 mr-3 p-3 col-start-3 justify-self-end">
-                <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="18.923" height="18.923" viewBox="0 0 18.923 18.923">
-                    <g id="Grupo_2941" data-name="Grupo 2941" transform="translate(523 -6912)">
-                      <rect id="Rectángulo_1844" data-name="Rectángulo 1844" width="24" height="2.762" transform="translate(-523 6928.97) rotate(-45)" fill="#fff"/>
-                      <rect id="Rectángulo_1845" data-name="Rectángulo 1845" width="24" height="2.762" transform="translate(-521.047 6912) rotate(45)" fill="#fff"/>
-                    </g>
-                  </svg>                  
-            </button>
         </div>
 
         <ul class="mx-6 flex flex-col justify-between gap-2 lowercase text-3xl font-bold">
@@ -218,7 +219,11 @@
         </div>
 
         <div class="bg-gris-900 px-6 py-5 grid grid-cols-2 gap-4">
-            <form class="m-0 bg-gris-800 col-span-1 rounded-full">
+            <form class="m-0 px-3 bg-gris-800 col-span-1 rounded-full flex items-center gap-2">
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <path id="Icon_Looking-glass" data-name="Icon / Looking-glass" d="M10.569,11.04a6.337,6.337,0,1,1,.471-.471L16,15.529,15.529,16l-4.96-4.96ZM6.333.667A5.667,5.667,0,1,1,.667,6.333,5.67,5.67,0,0,1,6.333.667Z" fill="#868e96" fill-rule="evenodd"/>
+                </svg>
+                  
                 <input class="w-full h-full placeholder-gris-300 bg-transparent font-serif" type="text" placeholder="Buscar" name="search">
             </form>
 
@@ -242,11 +247,11 @@
 
     <script>
         function openNav() {
-        document.getElementById("myNav").style.display = "flex";
+        document.getElementById("myNav").style.width = "100%";
         }
         
         function closeNav() {
-        document.getElementById("myNav").style.display = "none";
+        document.getElementById("myNav").style.width = "0%";
         }
     </script>
 </body>
