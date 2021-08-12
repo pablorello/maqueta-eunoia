@@ -18,10 +18,10 @@
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     </head>
 
-    <body>
+    <body class="bg-gris-900">
         <header class="w-full lg:h-3/4-screen bg-gris-900 text-white flex flex-col justify-between lg:bg-gradient-to-br lg:from-gris-500 lg:to-gris-900">
             <div class="max-w-screen-2xl lg:px-10 mx-auto lg:my-auto pt-20 pb-6 px-6 lg:py:0 grid lg:grid-cols-12 lg:gap-x-10 lg:gap-y-6 gap-y-2">
-                <h1 class="text-4xl lg:text-7xl lowercase font-bold tracking-tight col-span-8 leading-minimum">Términos y condiciones</h1>
+                <h1 class="text-4xl lg:text-7xl lowercase font-bold tracking-tight col-span-8 leading-minimum">Preguntas Frecuentes</h1>
     
                 <p class="font-serif hidden text-base lg:text-xl col-span-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
@@ -36,10 +36,54 @@
         </header>
 
         <!-- Contenido -->
-        <div class="w-full bg-gris-900 text-white font-serif">
-            <div class="max-w-screen-2xl lg:px-10 mx-auto px-6 lg:px-10 lg:py-10">
-                EUNOIA (Junto con sus afiliados, sucesores y cesionarios, “EUNOIA”)  entrega una comunidad deportiva en línea y productos, servicios, y  contenido relacionado a través del sitio de EUNOIA, transmitido por  la Internet a ciertos televisores, computadores y otros equipos  conectados a Internet (los “Equipos Listos para EUNOIA”). Tales Equipos  Listos para EUNOIA incluyen subdominios, aplicaciones a las que se  puede acceder a través de aplicaciones móviles y de escritorio  (incluyendo aplicaciones iOS y Android) (la “Aplicación”), YouTube  (“YouTube”), páginas de redes sociales (incluidas Facebook, Instagram,  Pinterest, Quora, Reddit, Spotify y Twitter) (colectivamente, el “Servicio  de EUNOIA”). Al registrarse como miembro o al visitar, navegar, o utilizar  el Servicio de EUNOIA de cualquier modo, usted (como “usuario”) acepta  estos Términos de Servicio (el “Acuerdo” o los “Términos de  Servicio”), que forman un Acuerdo vinculante entre usted y EUNOIA.  Estos Términos de Servicio gobiernan su utilización de dicho servicio. 
+        <section class="grid gap-0 pb-5 lg:-mt-20 sm:gap-y-4 sm:gap-x-10 grid-cols-1 lg:grid-cols-12 sm:px-16 lg:px-32 text-white">
+            <div class="relative w-full px-6 py-5 sm:p-6 lg:col-span-8 sm:rounded-lg bg-gradient-to-br from-gris-700 to-gris-800 font-semibold lg:shadow-xl">
+                <p class="text-sm sm:text-base lowercase">Pregunta</p>
+                <button class="accordion absolute top-1.5 right-4 sm:top-3 sm:right-4 w-12 h-12 p-2 lg:p-1.5 rounded-full">
+                    <div class="w-full p-2.5 lg:p-3 h-full bg-rosa-500 rounded-full align-middle">
+                        <svg class="w-full h-full" id="Grupo_2895" data-name="Grupo 2895" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                            <rect id="Rectángulo_1832" data-name="Rectángulo 1832" width="2" height="12" transform="translate(5)" fill="#fff"/>
+                            <rect id="Rectángulo_1833" data-name="Rectángulo 1833" width="2" height="12" transform="translate(12 5) rotate(90)" fill="#fff"/>
+                        </svg>
+                    </div>
+                </button>
+                
+                <p class="overflow-hidden max-h-0 transition-all duration-200 ease-out text-sm sm:text-base font-serif font-normal text-gris-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-        </div>
+            
+            <div class="relative w-full px-6 py-5 sm:p-6 lg:col-span-8 sm:rounded-lg bg-gradient-to-br from-gris-700 to-gris-800 font-semibold lg:shadow-xl">
+                <p class="text-sm sm:text-base lowercase">Pregunta</p>
+                <button class="accordion absolute top-1.5 right-4 sm:top-3 sm:right-4 w-12 h-12 p-2 lg:p-1.5 rounded-full">
+                    <div class="w-full p-2.5 lg:p-3 h-full bg-rosa-500 rounded-full align-middle">
+                        <svg class="w-full h-full" id="Grupo_2895" data-name="Grupo 2895" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                            <rect id="Rectángulo_1832" data-name="Rectángulo 1832" width="2" height="12" transform="translate(5)" fill="#fff"/>
+                            <rect id="Rectángulo_1833" data-name="Rectángulo 1833" width="2" height="12" transform="translate(12 5) rotate(90)" fill="#fff"/>
+                        </svg>
+                    </div>
+                </button>
+                
+                <p class="overflow-hidden max-h-0 transition-all duration-200 ease-out text-sm sm:text-base font-serif font-normal text-gris-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </section>
+        
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                    panel.style.marginTop = "0";
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                    panel.style.marginTop = "1rem";
+                }
+            });
+            }
+        </script>
     </body>
 </html>
