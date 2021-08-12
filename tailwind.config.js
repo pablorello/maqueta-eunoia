@@ -34,6 +34,9 @@ module.exports = {
      padding: {
       '4+': '1.125rem'
      },
+     height: {
+      '9/10-screen': '90vh'
+     },
       gridTemplateColumns: {
         // Simple 12 column grid
        '12': 'repeat(12, minmax(0, 1fr))',
