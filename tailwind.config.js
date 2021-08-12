@@ -35,7 +35,11 @@ module.exports = {
       '4+': '1.125rem'
      },
      height: {
-      '9/10-screen': '90vh'
+      '9/10-screen': '90vh',
+      '3/4-screen': '75vh'
+     },
+     lineHeight: {
+      'minimum': '1.125'
      },
       gridTemplateColumns: {
         // Simple 12 column grid
