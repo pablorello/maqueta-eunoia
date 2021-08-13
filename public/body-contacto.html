@@ -24,13 +24,9 @@
                 <div class="w-full max-w-screen-2xl mx-auto pt-24 pb-6 lg:py-0 grid lg:grid-cols-12 lg:gap-x-10 lg:gap-y-6 gap-y-2">
                     <h1 class="text-4xl lg:text-7xl lowercase font-bold tracking-tight col-span-8 leading-minimum">Contacto</h1>
         
-                    <p class="font-serif hidden text-base lg:text-xl col-span-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="font-serif text-base lg:text-xl col-span-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
             </div>
-            
-            <svg class="w-full h-full hidden text-gris-900 fill-current" xmlns="http://www.w3.org/2000/svg" width="320" height="21.313" viewBox="0 0 320 21.313">
-                <path id="Trazado_304" data-name="Trazado 304" d="M30,6618.66s57.814,24.383,162.476,3.854S350,6626.891,350,6626.891v-17.468H30Z" transform="translate(350 6630.735) rotate(180)"/>
-            </svg>
 
             <svg class="w-full h-auto hidden lg:block text-gris-900 fill-current" xmlns="http://www.w3.org/2000/svg" width="1536" height="61.409" viewBox="0 0 1536 61.409">
                 <path id="Trazado_3614" data-name="Trazado 3614" d="M30,6649.853s427.423,44.52,779.886,3.854S1566,6658.083,1566,6658.083v-48.661H30Z" transform="translate(1566 6670.832) rotate(180)"/>
@@ -38,28 +34,22 @@
         </header>
         
         <!-- Formulario Contacto -->
-        <section class="w-full bg-transparent text-white px-6 lg:px-10 py-10 lg:py-16">
+        <section class="w-full bg-transparent text-white px-6 lg:px-10 py-2 lg:py-10">
             <div class="h-auto max-w-screen-2xl mx-auto grid gap-2 lg:gap-x-10 lg:grid-cols-12">
-                <div class="lg:col-span-8 mb-7">
-                    <h2 class="font-bold tracking-tight leading-minimum mb-4 lg:mb-5 text-4xl lg:text-5xl lowercase">¿Tienes más dudas?</h2>
-
-                    <p class="font-serif lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, quae fuga veritatis recusandae mollitia neque iure iusto error nisi cupiditate odit delectus quaerat dolor molestias explicabo possimus laudantium aperiam quam.</p>
-                </div>
-
                 <form class="w-full lg:col-span-12 grid lg:grid-cols-2 gap-x-10 gap-y-4 lg:gap-y-8" action="">
                     <div class="h-fit flex flex-col gap-2">
                         <label class="w-full lg:text-lg font-semibold lowercase" for="nombre">Nombre completo:</label>
-                        <input class="w-full lg:text-lg rounded-lg py-3 px-3.5 lg:px-4 bg-gris-50 font-serif" placeholder="Nombre completo..." type="text" id="nombre" name="nombre">
+                        <input class="w-full lg:text-lg rounded-lg py-3 px-3.5 lg:px-4 bg-gris-800 font-serif" placeholder="Nombre completo..." type="text" id="nombre" name="nombre">
                     </div>
 
                     <div class="h-fit flex flex-col lg:col-start-1 gap-2">
                         <label class="w-full lg:text-lg font-semibold lowercase" for="correo">Correo:</label>
-                        <input class="w-full lg:text-lg rounded-lg py-3 px-3.5 lg:px-4 bg-gris-50 font-serif" placeholder="Correo..." type="text" id="correo" name="correo">
+                        <input class="w-full lg:text-lg rounded-lg py-3 px-3.5 lg:px-4 bg-gris-800 font-serif" placeholder="Correo..." type="text" id="correo" name="correo">
                     </div>
 
                     <div class="h-fit flex flex-col gap-2 lg:row-span-2 lg:row-start-1 lg:col-start-2">
-                        <label class="w-full lg:text-lg font-semibold lowercase" for="pregunta">Escribe tu pregunta:</label>
-                        <textarea class="w-full lg:text-lg h-44 rounded-lg py-3 px-3.5 lg:px-4 bg-gris-50 font-serif resize-none" placeholder="Escribe tu pregunta..." name="pregunta" rows="10" cols="40"></textarea>
+                        <label class="w-full lg:text-lg font-semibold lowercase" for="mensaje">Escribe tu mensaje:</label>
+                        <textarea class="w-full lg:text-lg h-44 rounded-lg py-3 px-3.5 lg:px-4 bg-gris-800 font-serif resize-none" placeholder="Escribe tu mensaje..." name="mensaje" rows="10" cols="40"></textarea>
                     </div>
 
                     <div class="w-full px-10 lg:col-span-2 flex justify-center">
@@ -68,25 +58,5 @@
                 </form>
             </div>
         </section>
-        
-        <script>
-            var acc = document.getElementsByClassName("accordion");
-            var i;
-            
-            for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                    panel.style.marginTop = "0";
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                    panel.style.marginTop = "1rem";
-                }
-            });
-            }
-        </script>
     </body>
 </html>
