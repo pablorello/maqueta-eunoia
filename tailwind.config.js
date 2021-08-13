@@ -35,6 +35,9 @@ module.exports = {
      padding: {
       '4+': '1.125rem'
      },
+     width: {
+      'fit': 'fit-content'
+     },
      height: {
       'fit': 'fit-content',
       '9/10-screen': '90vh',
