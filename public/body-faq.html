@@ -16,6 +16,16 @@
 
         <!-- Swiper's CSS -->
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+        <style>
+            @media screen and (min-width: 1024px){
+                .faq-shadow{
+                    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.20);
+                    -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.20);
+                    -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.20);
+                }
+            }
+        </style>
     </head>
 
     <body class="bg-white">
@@ -34,7 +44,7 @@
         <!-- Preguntas frecuentes -->
         <section class="w-full text-white px-0 sm:px-6 lg:px-10 pb-0 sm:pb-6 lg:pb-10 lg:-mt-28 bg-gris-900 lg:bg-transparent">
             <div class="max-w-screen-2xl mx-auto grid gap-0 sm:gap-y-4 sm:gap-x-10 grid-cols-1 lg:grid-cols-12">
-                <div class="relative w-full px-6 py-5 sm:p-6 lg:col-span-8 sm:rounded-lg bg-gradient-to-br from-gris-700 to-gris-800 font-semibold lg:shadow-xl">
+                <div class="relative w-full px-6 py-5 sm:p-6 lg:col-span-8 sm:rounded-lg bg-gradient-to-br from-gris-700 to-gris-800 font-semibold faq-shadow">
                     <p class="text-sm sm:text-base lowercase">Pregunta</p>
                     <button class="accordion absolute top-1.5 right-4 sm:top-3 sm:right-4 w-12 h-12 p-2 lg:p-1.5 rounded-full">
                         <div class="w-full p-2.5 lg:p-3 h-full bg-rosa-500 rounded-full align-middle">
@@ -48,7 +58,7 @@
                     <p class="overflow-hidden max-h-0 transition-all duration-200 ease-out text-sm sm:text-base font-serif font-normal text-gris-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
                 
-                <div class="relative w-full px-6 py-5 sm:p-6 lg:col-span-8 sm:rounded-lg bg-gradient-to-br from-gris-700 to-gris-800 font-semibold lg:shadow-xl">
+                <div class="relative w-full px-6 py-5 sm:p-6 lg:col-span-8 sm:rounded-lg bg-gradient-to-br from-gris-700 to-gris-800 font-semibold faq-shadow">
                     <p class="text-sm sm:text-base lowercase">Pregunta</p>
                     <button class="accordion absolute top-1.5 right-4 sm:top-3 sm:right-4 w-12 h-12 p-2 lg:p-1.5 rounded-full">
                         <div class="w-full p-2.5 lg:p-3 h-full bg-rosa-500 rounded-full align-middle">
