@@ -32,8 +32,12 @@ module.exports = {
        'max-height': 'max-height',
        'margin': 'margin'
      },
+     zIndex:{
+       '-10': '-10'
+     },
      padding: {
-      '4+': '1.125rem'
+      '4+': '1.125rem',
+      'full': '100%'
      },
      width: {
       'fit': 'fit-content'
@@ -103,7 +107,7 @@ module.exports = {
       grayscale: ['hover'], 
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/line-clamp')],
 }
 
 
